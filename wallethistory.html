@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+            line-height: 1.5;
+            
+        }
+        body{
+            margin-top: 50px;
+        }
+
+        p {
+            line-height: 1.2;
+        }
+
+        .container {
+            background-color: #202020;
+            width: 330px;
+            margin: auto;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .container-heading {
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sub-container {
+            
+            background-color: #303030;
+            width: 330px;
+            margin: auto;
+            border-radius: 10px;
+            padding-top: 10px;
+        }
+
+        .sub-container .balance {
+            text-align: center;
+        }
+
+        .sub-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .sub-1 img {
+            border-radius: 50px;
+            position: relative;
+            left: 37px;
+        }
+
+        .amount {
+            text-align: left;
+        }
+
+        .sub-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .history-heading {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .history-card {
+            display: grid;
+            grid-template-columns: 0.4fr 2fr 1fr;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .history-card img {
+            border-radius: 100px;
+        }
+
+        .textandtime {
+            font-size: 17px;
+        }
+
+        .sub-amount {
+            color: tomato;
+            font-size: 10px;
+
+        }
+
+        .sub {
+            color: rgb(255, 174, 0);
+        }
+
+        .footer {
+            text-align: center;
+
+            width: fit-content;
+            margin: auto;
+            border-radius: 15px;
+            padding: 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            font-size: 18px;
+
+        }
+
+        .receive {
+            border-right: 1px solid white;
+            padding-right: 8px;
+            color: rgb(219, 23, 23);
+        }
+        .footer-a{
+            padding-left: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-heading">
+            <h2>Bitcoin Wallet</h2>
+        </div>
+        <div class="sub-container">
+            <h2 class="balance">Balance</h2>
+            <div class="sub-1">
+                <img height="60px" src="bitcoin.png">
+                <div class="amount">
+                    <p style="font-size:20px">952.65 BTC</p>
+                    <p style="font-size: 12px; color: #A0A0A0;">~32560.32 USD</p>
+                </div>
+            </div>
+            <div class="sub-2">
+                <h2>Bitcoin Cash</h2>
+                <div class="amount">
+                    <p style="font-size: 20px;">536.21 BTC</p>
+                    <p style="font-size: 12px;color: #A0A0A0;">~21254.78 USD</p>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <h2 class="history-heading">History</h2>
+            <div class="history-card">
+                <div class="img">
+                    <img height="30px" src="top.png">
+                </div>
+                <div class="textandtime">
+                    <p>Sent</p>
+                    <p style="font-size: 12px; color: #A0A0A0;">10 mins ago</p>
+                </div>
+                <div class="amount">
+                    <p class="sub">365.25 BTC</p>
+                    <p class="sub-amount">~2236.32 USD</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="img">
+                    <img height="30px" src="bottom.png">
+                </div>
+                <div class="textandtime">
+                    <p style="font-size: 17px;">Received</p>
+                    <p style="font-size: 12px; color: #A0A0A0;">10 mins ago</p>
+                </div>
+                <div class="amount">
+                    <p class="sub">265.65 BTC</p>
+                    <p class="sub-amount">6536.32 USD</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="img">
+                    <img height="30px" src="top.png">
+                </div>
+                <div class="textandtime">
+                    <p>Sent</p>
+                    <p style="font-size: 12px; color: #A0A0A0;">10 mins ago</p>
+                </div>
+                <div class="amount">
+                    <p class="sub">123.66 BTC</p>
+                    <p class="sub-amount">~953.34 USD</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="img">
+                    
+                    <img height="30px" src="top.png">
+                </div>
+                <div class="textandtime">
+                    <p>Sent</p>
+                    <p style="font-size: 12px; color: #A0A0A0">52 mins ago</p>
+                </div>
+                <div class="amount">
+                    <p class="sub">596.58 BTC</p>
+                    <p class="sub-amount">6536.78 USD</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <a href="#" class="receive">Receive</a>
+            <a href="#" class="sub footer-a">Send</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
